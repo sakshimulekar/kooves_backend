@@ -113,7 +113,7 @@ app.get(
         const user = req.user;
         // Handle successful authentication
         const token = jwt.sign({userId:user._id, user: user }, process.env.secret_key);
-        const redirectUrl = `http://localhost:3000/success?token=${token}&firstName=${user.firstName}&picture=${user.picture}&id=${user._id}`;
+        const redirectUrl = `https://650737f85ed2ae59db28ce31--stylehubecommerce.netlify.app/success?token=${token}&firstName=${user.firstName}&picture=${user.picture}&id=${user._id}`;
         res.redirect(redirectUrl);
     }
 );
