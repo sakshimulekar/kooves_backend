@@ -9,7 +9,7 @@ passport.use(
         {
             clientID: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-            callbackURL: 'https://stylehub-vb4k.onrender.com/auth/google/callback',
+            callbackURL: 'https://shy-lime-donkey-vest.cyclic.cloud/auth/google/callback',
             passReqToCallback: true,
         },
         async function (request, accessToken, refreshToken, profile, done) {
